@@ -157,7 +157,6 @@ console.log("ativou");
   
   let img = document.querySelector("#coinimage");
   let nomeCrypto = document.querySelector(".nomecrypto");
-  let coinImage = document.querySelector("#coinimage");
   let my3 = document.querySelector(".my-3");
   let cards = document.querySelector(".cards");
 
@@ -179,11 +178,6 @@ console.log("ativou");
     texto=texto + "Atualizado em : <p id='data'> "+ date+" </p> <br><br><br>";
     painel.innerHTML = texto;
 
-try {
-      img.setAttribute("src", 'https://s3.us-east-2.amazonaws.com/nomics-api/static/images/currencies/'+coinLowerCase+'.svg');
-}catch {
-  console.log("nao achou img")
-}
 
     nomeCrypto.innerHTML= coinUpperCase;
 
